@@ -4,7 +4,6 @@ class Solution {
         // code here
         int n = a.size();
         sort(a.begin(), a.end(), greater <int> ());
-
         sort(b.begin(), b.end(), greater <int> ());
         
         priority_queue <pair <int, pair<int, int>>> pq;
