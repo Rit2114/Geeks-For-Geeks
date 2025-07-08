@@ -16,6 +16,12 @@ class Solution {
                 while(!st.empty() && mp[st.top()]<=mp[arr[i]]){
                     st.pop();
                 }
-                
+                if(!st.empty()){
+                    ans[i]=st.top();
+                }
+            }
+            st.push(arr[i]);
+        }
+        return ans;
     }
 };
