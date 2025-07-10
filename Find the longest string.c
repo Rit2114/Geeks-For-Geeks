@@ -14,11 +14,4 @@ class Solution {
                     n = 0;  break;
                 }
             }
-            if(n > l){
-                s = i;  l = n;
-            }
-        }
-        return s;
-    }
-};
-
+            
