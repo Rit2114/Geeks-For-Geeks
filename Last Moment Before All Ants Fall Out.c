@@ -4,6 +4,7 @@ class Solution {
     
       int ans = 0;
       int l = 0, r = n;
+      for(int i : left)   ans = max(ans, i - l);
       for(int i : right)   ans = max(ans, r - i);
       return ans;
     }
