@@ -7,5 +7,8 @@ class Solution {
     int total= arr[0];   
     for(int i=1;i<arr.size();i++){
             curr_max=max(arr[i],curr_max+arr[i]);
+            max_sum=max(max_sum,curr_max);
+             curr_min = min(arr[i], curr_min + arr[i]);
+          min_sum = min(min_sum, curr_min);
     }
 };
