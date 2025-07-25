@@ -12,5 +12,7 @@ class Solution {
           min_sum = min(min_sum, curr_min);
           total+=arr[i];
         }
+      if(max_sum<0) return max_sum;
+        return max(max_sum,total-min_sum);
     }
 };
