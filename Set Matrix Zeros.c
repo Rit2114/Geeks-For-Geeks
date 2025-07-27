@@ -15,5 +15,10 @@ class Solution {
                 }
             }
         }
+      for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                if(rows[i]==0 || cols[j]==0){
+                    mat[i][j]=0;
+                }
     }
 };
