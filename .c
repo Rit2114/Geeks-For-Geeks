@@ -11,7 +11,7 @@ class Solution {
             }
             maxi = max({colsum, maxi, rowsum});
         }
-
+        return rows * maxi - realsum;
     }
 };
 
