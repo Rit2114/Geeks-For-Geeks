@@ -9,6 +9,8 @@ class Solution {
                 realsum += mat[i][j];
                 colsum += mat[j][i];
             }
+            maxi = max({colsum, maxi, rowsum});
+        }
 
     }
 };
