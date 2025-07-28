@@ -2,6 +2,8 @@ class Solution {
   public:
     int balanceSums(vector<vector<int>>& mat) {
        int realsum = 0, rows = mat.size(), maxi = 0;
+       for(int i = 0;i < rows; i++){
+            int rowsum = 0, colsum = 0;
 
     }
 };
