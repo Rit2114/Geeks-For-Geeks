@@ -23,5 +23,6 @@ class Solution {
                 ans.push_back(freq[i]);
             }
         }
+      return ans;
     }
 };
