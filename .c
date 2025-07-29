@@ -18,5 +18,10 @@ class Solution {
              freq[int(c) - 97] = sum - int(c) - prefixsum[int(c) - 97];
             }
         }
+        for(int i = 0; i<26; i++){
+            if(freq[i] != 0 && freq[i] != 1 && freq[i] != -1){
+                ans.push_back(freq[i]);
+            }
+        }
     }
 };
