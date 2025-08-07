@@ -20,6 +20,8 @@ class Solution {
                     prefix=ans[prefix-1];
                     
                 }
-              
+              }
+        }
+        return ans[n-1];
     }
 };
