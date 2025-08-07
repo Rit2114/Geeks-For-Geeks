@@ -11,5 +11,10 @@ class Solution {
                 prefix++;
                 suffix++;
             }
+            else{
+                if(prefix==0){
+                    ans[suffix]=0;
+                    suffix++;
+                }
     }
 };
