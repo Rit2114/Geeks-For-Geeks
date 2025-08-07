@@ -16,5 +16,10 @@ class Solution {
                     ans[suffix]=0;
                     suffix++;
                 }
+                else{
+                    prefix=ans[prefix-1];
+                    
+                }
+              
     }
 };
