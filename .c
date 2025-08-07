@@ -3,4 +3,5 @@ class Solution {
     int getLPSLength(string &s) {
         // code here
         
-    
+    }
+};
