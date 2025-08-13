@@ -8,6 +8,8 @@ class Solution {
         {
             arr[i]=arr[i]%k!=0?k-arr[i]%k:0;
         }
-      
+        sort(arr.begin(),arr.end());
+        int i=0;
+        int ans=0;
     }
 };
