@@ -17,5 +17,6 @@ class Solution {
             i++;
             safe_troop--;
         }
+        return ans;
     }
 };
