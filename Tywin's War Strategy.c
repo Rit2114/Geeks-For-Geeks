@@ -11,5 +11,11 @@ class Solution {
         sort(arr.begin(),arr.end());
         int i=0;
         int ans=0;
+        while(safe_troop)
+        {
+            ans+=arr[i];
+            i++;
+            safe_troop--;
+        }
     }
 };
