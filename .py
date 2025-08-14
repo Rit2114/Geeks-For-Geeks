@@ -13,4 +13,14 @@ class Solution:
                 while j <= right and nums[i] > 2 * nums[j]:
                     j += 1
                 count += (j - (mid + 1))
-                
+
+            # Merge step
+            temp = []
+            i, j = left, mid + 1
+            while i <= mid and j <= right:
+                if nums[i] <= nums[j]:
+                    temp.append(nums[i])
+                    i += 1
+                else:
+                    temp.append(nums[j])
+                    j += 1
