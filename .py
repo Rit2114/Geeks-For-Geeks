@@ -24,3 +24,9 @@ class Solution:
                 else:
                     temp.append(nums[j])
                     j += 1
+            while i <= mid:
+                temp.append(nums[i])
+                i += 1
+            while j <= right:
+                temp.append(nums[j])
+                j += 1
