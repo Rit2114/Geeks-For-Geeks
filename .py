@@ -13,7 +13,7 @@ class Solution:
                 while j <= right and nums[i] > 2 * nums[j]:
                     j += 1
                 count += (j - (mid + 1))
-
+            
             # Merge step
             temp = []
             i, j = left, mid + 1
@@ -30,3 +30,8 @@ class Solution:
             while j <= right:
                 temp.append(nums[j])
                 j += 1
+            
+            nums[left:right+1] = temp
+            return count
+        
+        return merge_sort(arr, 0, len(arr) - 1)
