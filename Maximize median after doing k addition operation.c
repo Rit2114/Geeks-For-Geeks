@@ -1,5 +1,7 @@
-class Solution:
-    def maximizeMedian(self, arr, k):
+class Solution {
+  public:
+    int maximizeMedian(vector<int>& arr, int k) {
+        // code here
         
-        
-
+    }
+};
