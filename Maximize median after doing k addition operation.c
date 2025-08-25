@@ -29,6 +29,21 @@ class Solution {
         return (cnt <= k);
         
     }
-    
+    int maximizeMedian(vector<int>& arr, int k) {
+        sort(arr.begin() , arr.end());
+        int n = arr.size();
+        int start = arr[(n - 1) / 2] , end = arr.back() + k;
+        int ans = arr[(n - 1) / 2];
+        while(start <= end)
+        {
+            int mid = start + (end - start) / 2;
+            if(check(mid , arr , k))
+                ans = mid , start = mid + 1;
+            else
+                end = mid - 1;
+        }
+        return ans;
+
+      
     }
 };
