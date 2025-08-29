@@ -6,5 +6,6 @@ class Solution {
                 int m = mat[0].size();
                       
                 for(int i=0;i<n;i++){
+                   bool flag = true;
     }
 };
