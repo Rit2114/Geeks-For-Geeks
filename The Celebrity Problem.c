@@ -16,5 +16,12 @@ class Solution {
                                   }
                                  
                           }
+                          if (flag ) return i;
+                          
+                       
+                }
+                
+       
+      return -1;
     }
 };
