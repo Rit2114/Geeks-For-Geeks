@@ -35,5 +35,29 @@ class Solution {
             }
             freq.push_back(*--am.end());
         }
+        map<int,set<int>>ss;
+        
+        map<int,int>deu;
+        for(int i = 0; i < k; i++){
+            
+            if(deu.find(arr[i]) != deu.end()){
+                ss[deu[arr[i]]].erase(arr[i]);
+            }
+            
+            deu[arr[i]]++;
+            ss[deu[arr[i]]].insert(arr[i]);
+        }
+        for(int i = k; i <= n; i++){
+            
+            sum += *ss[freq[i - k]].begin();
+            if(i == n) break;
+            if(deu[arr[i - k]] ==  1){
+                ss[1].erase(arr[i - k]);
+                deu.erase(arr[i - k]);
+            } else{
+                ss[deu[arr[i - k]]].erase(arr[i - k]);
+                deu[arr[i - k]]--;
+                ss[deu[arr[i - k]]].insert(arr[i - k]);
+            }
     }
 };
