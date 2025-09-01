@@ -13,5 +13,27 @@ class Solution {
         for(auto i : mp){
             am.insert(i.second);
         }
+        int sum = 0;
+        freq.push_back(*--am.end());
+        for(int i = k; i < n; i++){
+            
+            if(mp.find(arr[i]) != mp.end()){
+                am.erase(am.find(mp[arr[i]]));
+                mp[arr[i]]++;
+            }else{
+                mp[arr[i]]++;
+            }
+            am.insert(mp[arr[i]]);
+            
+            if(mp[arr[i - k]] == 1){
+                am.erase(am.find(1));
+                mp.erase(arr[i - k]);
+            }else {
+                am.erase(am.find(mp[arr[i - k]]));
+                mp[arr[i - k]]--;
+                am.insert(mp[arr[i - k]]);
+            }
+            freq.push_back(*--am.end());
+        }
     }
 };
