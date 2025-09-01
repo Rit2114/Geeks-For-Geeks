@@ -59,5 +59,13 @@ class Solution {
                 deu[arr[i - k]]--;
                 ss[deu[arr[i - k]]].insert(arr[i - k]);
             }
+          if(deu.find(arr[i]) != deu.end()){
+                ss[deu[arr[i]]].erase(arr[i]);
+            }
+            
+            deu[arr[i]]++;
+            ss[deu[arr[i]]].insert(arr[i]);
+        }
+        return sum;
     }
 };
