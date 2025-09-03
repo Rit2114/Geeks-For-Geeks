@@ -11,5 +11,6 @@ class Solution {
             head=temp1;
             temp1=next;
         }
+        return head;
     }
 };
