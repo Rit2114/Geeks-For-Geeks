@@ -11,5 +11,7 @@ class Solution {
             prv = temp;
             temp = nxt;
         }
+        head->next = reverseKGroup(temp, k);
+        return prv;
     }
 };
