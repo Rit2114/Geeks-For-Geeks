@@ -28,6 +28,16 @@ class Solution {
           tempo->data=0;  
           tempo=tempo->next;
         }
-        
+        for(int i=1;i<=count1;i++)
+        {
+            tempo->data=1;
+            tempo=tempo->next;
+        }
+        for(int i=1;i<=count2;i++)
+        {
+            tempo->data=2;
+            tempo=tempo->next;
+        }
+        return head;
     }
 };
