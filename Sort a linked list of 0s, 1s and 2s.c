@@ -22,6 +22,12 @@ class Solution {
             }
             temp=temp->next;
         }
+        Node* tempo = head;
+        for(int i = 1;i<=count0;i++)
+        {
+          tempo->data=0;  
+          tempo=tempo->next;
+        }
         
     }
 };
