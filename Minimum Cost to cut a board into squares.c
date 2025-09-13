@@ -17,6 +17,7 @@ class Solution {
                 cost += p.first * (hor_cut+1);
             }
         }
+        return cost;
     }
 };
 
