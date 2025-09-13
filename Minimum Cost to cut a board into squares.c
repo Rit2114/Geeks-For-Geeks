@@ -12,7 +12,11 @@ class Solution {
             if(p.second == 0){
                 hor_cut++;
                 cost += p.first * (ver_cut+1);
+            }else{
+                ver_cut++;
+                cost += p.first * (hor_cut+1);
             }
+        }
     }
 };
 
