@@ -25,3 +25,4 @@ class Solution {
         return 1 + countNodes(node->left) + countNodes(node->right);
   }
 };
+
