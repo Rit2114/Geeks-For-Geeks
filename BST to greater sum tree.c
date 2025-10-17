@@ -1,6 +1,6 @@
 class Solution {
   public:
-    void transformTree(Node *root) {
+    void solve(Node *root,int & sum) {
         // code here
         if(!root){return;}
       solve(root->right,sum);
@@ -8,10 +8,11 @@ class Solution {
       root->data=sum;
       sum+=rootval;
       solve(root->left,sum);
-    }
+  }
     void transformTree(Node *root) {
         // code here
         int sum=0;
         solve(root,sum);
+        
     }
 };
