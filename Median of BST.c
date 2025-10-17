@@ -23,4 +23,5 @@ class Solution {
     int countNodes(Node* node){
         if(!node) return 0;
         return 1 + countNodes(node->left) + countNodes(node->right);
+  }
 };
