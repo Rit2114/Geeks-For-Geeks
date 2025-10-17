@@ -4,4 +4,4 @@ class Solution {
         // Code here
         
     }
-}
+};
