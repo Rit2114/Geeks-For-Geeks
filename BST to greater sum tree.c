@@ -9,4 +9,6 @@ class Solution {
       sum+=rootval;
       solve(root->left,sum);
     }
+
+    }
 };
