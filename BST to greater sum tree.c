@@ -9,6 +9,9 @@ class Solution {
       sum+=rootval;
       solve(root->left,sum);
     }
-
+void transformTree(Node *root) {
+        // code here
+        int sum=0;
+        solve(root,sum);
     }
 };
